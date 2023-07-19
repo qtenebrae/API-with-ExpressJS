@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node dist/main.js",
     "dev": "nodemon",
+    "dev:inspect": "nodemon -e ts,json --exec node --inspect=localhost:9222 -r ts-node/register src/main.ts",
     "lint": "eslint ./src/**",
     "lint:fix": "eslint ./src/** --fix*",
     "build": "tsc",
@@ -15,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.18.2",
     "inversify": "^6.0.1",
     "reflect-metadata": "^0.1.13",
