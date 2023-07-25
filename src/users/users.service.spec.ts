@@ -7,8 +7,6 @@ import { TYPES } from '../types';
 import { UserService } from './users.service';
 import { User } from './user.entity';
 import { UserModel } from '@prisma/client';
-import { UserRegisterDto } from './dto/user-register.dto';
-import { UsersRepository } from './users.repository';
 
 const ConfigServiceMock: IConfigService = {
 	get: jest.fn(),
